@@ -1,0 +1,97 @@
+body {
+    background: white url("images/background.gif") no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    background-color: white;
+    width: 580px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container {
+    border: 2px solid black;
+    width: 580px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+
+.field {
+    background-color: white;
+}
+
+.field label {
+    font-size: large;
+}
+
+.button {
+    background-color: deepskyblue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.polls {
+    list-style-type: none;
+}
+
+.polls a:link, a:visited {
+    background-color: deepskyblue;
+    color: white;
+    border: 2px solid blue;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.polls a {
+    width: 450px;
+}
+.polls a:hover, a:active {
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.navbar p {
+    display: block;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px 16px;
+    font-size: large;
+}
+
+.navbar .title {
+    float: left;
+}
+.navbar li {
+    float: right;
+}
+  
+.navbar li a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+  
+.navbar li a:hover {
+    background-color: #111;
+}

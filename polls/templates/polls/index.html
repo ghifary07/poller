@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Polling App</title>
+</head>
+<body>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+<!-- navbar -->
+<ul class="navbar">
+    <li class="title"><p>Polling Campaign</p></li>
+    <li><a href="{% url 'admin:index' %}">Admin Login</a></li>
+</ul>
+<!-- navbar -->
+
+<h1>Polls question</h1>
+<div class="container">
+    {% if latest_question_list %}
+        <ul class="polls">
+        {% for question in latest_question_list %}
+            <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+</div>
+</body>
+</html>
